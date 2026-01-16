@@ -1,32 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  
-  <style>
-  @font-face {
-    font-family: 'MyFont';
-    src: url('fonts/PlusJakartaSans-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  
-
-  
-  h1, h2, h3 {
-    font-family: 'MyFont', sans-serif;
-  }
-</style>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cover</title>
+
+  <style>
+    /* Load your static font */
+    @font-face {
+      font-family: 'MyFont';
+      src: url('fonts/MyFont-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Apply font to everything */
+    body {
+      font-family: 'MyFont', sans-serif;
+      color: #111;
+      margin: 40px;
+    }
+
+    /* H2: your name, 24pt */
+    h2 {
+      font-size: 24pt;
+      margin: 0 0 12px 0;
+    }
+
+    /* H1: page title, 36pt */
+    h1 {
+      font-size: 36pt;
+      margin: 0 0 12px 0;
+    }
+
+    /* Link: 12pt, same font */
+    a {
+      font-family: 'MyFont', sans-serif;
+      font-size: 12pt;
+      color: blue;
+      text-decoration: underline;
+    }
+
+    /* Optional spacing */
+    p {
+      margin: 0 0 12px 0;
+    }
+
+  </style>
 </head>
 <body>
 
-<h1>saylor allen</h1>
-<p>A COLLECTION OF WORKS</p>
+  <!-- Line 1: Your Name -->
+  <h2>Saylor Allen</h2>
 
-<a> href="healing-01.html">HEALING</a>
-  
+  <!-- Line 2: Page Title -->
+  <h1>Portfolio Overview</h1>
+
+  <!-- Line 3: Link -->
+  <p><a href="healing.html">Go to Healing Project</a></p>
+
 </body>
 </html>
