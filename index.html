@@ -77,7 +77,17 @@
       /*text-decoration: underline;*/                 /* underline */
       margin: 0 10px;                             /* space between links */
     }
-
+    /* Corner text */
+    footer .footer-name {
+      position: absolute;   /* place it relative to the footer */
+      right: 10px;          /* 10px from right edge */
+      bottom: 5px;          /* 5px from bottom */
+      font-family: 'MyVariableFont', sans-serif;
+      font-weight: 300;     /* light weight */
+      font-size: 10pt;      /* small and subtle */
+      color: #aaa;          /* light gray */
+      opacity: 0.5;         /* makes it very faint */
+    }
     
   </style>
 </head>
@@ -96,7 +106,10 @@
 </body>
 
   <footer>
-    <p><a href="healing.html">HEALING</a><a href="scrap.html">SCRAP</a></p>
+    <p>
+      <a href="healing.html">HEALING</a><a href="scrap.html">SCRAP</a>
+    </p>
+    <span class="footer-name">_saylor allen</span>
   
   </footer>
 
