@@ -1,3 +1,3 @@
-<p align="left" style="font-size: 24pt;">
-  saylor allen
+<p align="center" style="font-size: small;">
+  <a href="https://saylorallen.github.io/">saylor allen</a>
 </p>
