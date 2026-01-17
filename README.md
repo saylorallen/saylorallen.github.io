@@ -1,2 +1,115 @@
-# saylorallen.github.io
-Saylor Allen M. Arch Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>saylor allen - Portfolio * </title>
+
+  <style>
+    /* Load your variable font */
+    @font-face {
+      font-family: 'myfont';
+      src: url('fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+    }
+
+    /* Load your variable font */
+    @font-face {
+      font-family: 'myfont';
+      src: url('fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: italic;
+    }
+    
+    /* Apply font to everything */
+    body {
+      font-family: 'myfont', sans-serif;
+      color: #ffffff;
+      margin: 40px;
+      background-color: #a1c3e6; /*background page color*/
+    }
+
+    /* H2: your name, 24pt */
+    h2 {
+      font-family: 'myfont', sans-serif;
+      font-weight: 300;
+      font-size: 24pt;
+      margin: 0 0 12px 0;
+    }
+
+    /* H1: page title, 36pt */
+    h1 {
+      font-size: 36pt;
+      margin: 0 0 12px 0;
+    }
+
+    /* Link: 12pt, same font */
+    a {
+      font-family: 'myfont', sans-serif;
+      font-size: 12pt;
+      font-weight: 100;
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    /* Optional spacing */
+    p {
+      margin: 0 0 12px 0;
+    }
+
+    footer {
+      background-color: white; /* white background */
+      padding: 20px;           /* space inside footer */
+      text-align: center;      /* center the links */
+      position: fixed;         /* stick to bottom */
+      bottom: 0;
+      left: 0;
+      width: 100%;             /* full width */
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* optional subtle shadow */
+    }
+
+    footer a {
+      font-family: 'myfont', sans-serif; /* same font */
+      font-weight: 300;                           /* light weight */
+      font-size: 12pt;                            /* same size as before */
+      color: #000000 ;                                /* link color */
+      /*text-decoration: underline;*/                 /* underline */
+    }
+    /* Corner text */
+    footer .footer-name {
+      position: absolute;   /* place it relative to the footer */
+      left: 20px;          /* 10px from right edge */
+      bottom: 20px;          /* 5px from bottom */
+      font-family: 'myfont', sans-serif;
+      font-weight: 100;     /* light weight */
+      font-size: 10pt;      /* small and subtle */
+      color: #000000;          /* light gray */
+      opacity: 1;         /* makes it very faint */
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Line 1: Your Name -->
+  <h2>saylor allen</h2>
+
+  <!-- Line 2: Page Title -->
+  <h1>A COLLECTION OF WORKS</h1>
+ 
+  <!-- Line 3: Link -->
+  <!-- <p><a href="healing.html">HEALING</a><a href="scrap.html">SCRAP</a><a href="yield.html">YEILD</a></p> -->
+ 
+
+</body>
+
+  <footer>
+    <p>
+      <a href="healing.html">HEALING</a><a href="scrap.html">SCRAP</a>
+    </p>
+    <span class="footer-name">_saylor allen</span>
+  
+  </footer>
+
+</html>
