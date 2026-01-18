@@ -65,7 +65,7 @@ a {
 
 footer {
   background-color: var(--footer-bg);
-  padding: 20px;
+  padding: 0px;
   position: absolute;
   width: 100%;
 }
