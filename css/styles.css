@@ -22,7 +22,7 @@
 
 :root {
   --bg-color: #a1c3e6;       /* blue background */
-  --text-color: #000000;     /* main text color */
+  --text-color: var(--text-color);     /* main text color */
   --footer-bg: #ffffff;      /* footer background */
   --muted-text: #999999;     /* muted footer text (optional) */
 }
