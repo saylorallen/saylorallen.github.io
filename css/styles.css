@@ -3,15 +3,15 @@
 /* ------------------ */
 
 @font-face {
-  font-family: 'reg';
-  src: url('fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-family: 'myfont-regular';
+  src: url('../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ita';
-  src: url('fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype');
+  font-family: 'myfont-italic';
+  src: url('../fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: italic;
 }
@@ -21,21 +21,32 @@
 /* ------------------ */
 
 :root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --footer-bg: #ffffff;
+  --bg-color: #a1c3e6;       /* blue background */
+  --text-color: #000000;     /* main text color */
+  --footer-bg: #ffffff;      /* footer background */
+  --muted-text: #999999;     /* muted footer text (optional) */
 }
 
 /* ------------------ */
 /* Global styles */
 /* ------------------ */
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: 'reg', sans-serif;
+  font-family: 'myfont-regular', sans-serif;
   font-weight: 300;
   background-color: var(--bg-color);
   color: var(--text-color);
-  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 /* ------------------ */
@@ -43,19 +54,28 @@ body {
 /* ------------------ */
 
 h1 {
+  font-family: 'myfont-regular', sans-serif;
   font-size: 36pt;
   font-weight: 700;
+  margin: 0 0 20px 0;
 }
 
 h2 {
+  font-family: 'myfont-regular', sans-serif;
   font-size: 24pt;
   font-weight: 300;
+  margin: 0 0 12px 0;
 }
 
 a {
+  font-family: 'myfont-regular', sans-serif;
   font-size: 12pt;
   color: var(--text-color);
   text-decoration: none;
+}
+
+i, em {
+  font-family: 'myfont-italic', sans-serif;
 }
 
 /* ------------------ */
@@ -64,30 +84,19 @@ a {
 
 footer {
   background-color: var(--footer-bg);
-  padding: 20px;
   width: 100%;
-  margin-top: auto;          /* pushes footer to bottom */
+  margin-top: auto;           /* pushes footer to bottom */
+  padding: 20px;
   display: flex;
-  justify-content: center;   /* center links */
+  justify-content: center;    /* center links */
   align-items: center;
-  position: relative;        /* allows absolute positioning inside */
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 footer a {
-  font-family: 'reg', sans-serif;
+  font-family: 'myfont-regular', sans-serif;
   font-weight: 300;
   font-size: 12pt;
   color: var(--text-color);
   margin: 0 10px;
-}
-
-footer .footer-name {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 10pt;
-  font-weight: 100;
-  color: var(--text-color);
 }
