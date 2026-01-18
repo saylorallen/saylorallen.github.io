@@ -21,7 +21,7 @@
 /* ------------------ */
 
 :root {
-  --bg-color: #f5f5f5;
+  --bg-color: #ffffff;
   --text-color: #000000;
   --footer-bg: #ffffff;
   --muted-text: #999999;
@@ -66,7 +66,7 @@ a {
 footer {
   background-color: var(--footer-bg);
   padding: 20px;
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 
