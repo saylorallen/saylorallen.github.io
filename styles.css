@@ -4,8 +4,8 @@
 
 :root{--text:#0b1220;--muted:#6b7280;--accent:#60a5fa}
 html,body{height:100%}
-body{font-family:'Plus Jakarta Sans', sans-serif; background:#ffffff; color:var(--text); margin:0; padding:3rem; display:flex; align-items:flex-start; justify-content:center; min-height:100vh}
-.wrap{max-width:760px; width:100%}
+body{font-family:'Plus Jakarta Sans', sans-serif; background:#ffffff; color:var(--text); margin:0; padding:3rem; display:flex; flex-direction:column; align-items:center; min-height:100vh}
+.wrap{max-width:760px; width:100%; flex:1; display:flex; flex-direction:column}
 header h1{margin:0 0 0.25rem; font-size:2rem}
 p.lead{margin:0 0 1.5rem; color:var(--muted)}
 ul.toc{list-style:none; padding:0; margin:0; display:grid; gap:0.5rem}
@@ -14,7 +14,18 @@ ul.toc{list-style:none; padding:0; margin:0; display:grid; gap:0.5rem}
 .meta{display:flex;flex-direction:column}
 .meta b{font-size:1rem}
 .meta small{color:var(--muted)}
-footer{margin-top:1.75rem; color:var(--muted); font-size:0.9rem}
+footer{margin-top:auto; color:var(--muted); font-size:0.9rem; padding:0.75rem 0}
 
 /* Utility */
 .container{padding:0 1rem}
+
+/* Content placeholders - fill these in */
+.title{font-size: 48px; font-weight: 700; font-family: plus jakarta sans, sans-serif; color: var(--text); 
+	/* heading styles go here */
+}
+.subtitle{font-size: 24px; font-weight: 300; font-family: plus jakarta sans, sans-serif; color: var(--text);
+	/* subtitle styles go here */
+}
+.body{font-size: 12px; font-weight: 100; font-family: plus jakarta sans, sans-serif; color: var(--text);
+	/* body copy styles go here */
+}
