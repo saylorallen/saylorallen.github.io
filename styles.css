@@ -1,33 +1,23 @@
-/* Font declarations */
-@font-face{
-	font-family: 'Plus Jakarta Sans';
-	src: url('fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
-	font-weight: 100 900;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face{
-	font-family: 'Plus Jakarta Sans';
-	src: url('fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype');
-	font-weight: 100 900;
-	font-style: italic;
-	font-display: swap;
-}
+/* Plus Jakarta Sans - five weights loaded explicitly */
+@font-face{font-family:'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-ExtraLight.ttf') format('truetype'); font-weight:200; font-style:normal; font-display:swap}
+@font-face{font-family:'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-Regular.ttf') format('truetype'); font-weight:400; font-style:normal; font-display:swap}
+@font-face{font-family:'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-Medium.ttf') format('truetype'); font-weight:500; font-style:normal; font-display:swap}
+@font-face{font-family:'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-SemiBold.ttf') format('truetype'); font-weight:600; font-style:normal; font-display:swap}
+@font-face{font-family:'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-ExtraBold.ttf') format('truetype'); font-weight:800; font-style:normal; font-display:swap}
 
-:root{--bg:#ffffff;--card:#0b1220;--accent:#60a5fa;--text:#e6eef8}
+:root{--text:#0b1220;--muted:#6b7280;--accent:#60a5fa}
 html,body{height:100%}
-body{font-family:'Plus Jakarta Sans', system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial, sans-serif; background:linear-gradient(180deg,#061027 0%, var(--bg) 100%); color:var(--text); margin:0; padding:3rem; display:flex; align-items:flex-start; justify-content:center; min-height:100vh}
+body{font-family:'Plus Jakarta Sans', sans-serif; background:#ffffff; color:var(--text); margin:0; padding:3rem; display:flex; align-items:flex-start; justify-content:center; min-height:100vh}
 .wrap{max-width:760px; width:100%}
 header h1{margin:0 0 0.25rem; font-size:2rem}
-p.lead{margin:0 0 1.5rem; color:#9fb0d1}
+p.lead{margin:0 0 1.5rem; color:var(--muted)}
 ul.toc{list-style:none; padding:0; margin:0; display:grid; gap:0.5rem}
-.item{background:var(--card); padding:0.9rem 1rem; border-radius:8px; display:flex; align-items:center; gap:0.75rem; text-decoration:none; color:var(--text); transition:transform .12s ease, box-shadow .12s}
-.item:hover{transform:translateY(-4px); box-shadow:0 6px 18px rgba(2,6,23,.6)}
-.thumb{width:40px;height:40px;border-radius:6px;background:linear-gradient(135deg,#0b1220,#0b2a4a);display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700}
+.item{background:#ffffff; padding:0.9rem 1rem; border-radius:8px; display:flex; align-items:center; gap:0.75rem; text-decoration:none; color:var(--text); border:1px solid #eef2f7}
+.thumb{width:40px;height:40px;border-radius:6px;background:#f3f6f9;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700}
 .meta{display:flex;flex-direction:column}
 .meta b{font-size:1rem}
-.meta small{color:#9fb0d1}
-footer{margin-top:1.75rem; color:#9fb0d1; font-size:0.9rem}
+.meta small{color:var(--muted)}
+footer{margin-top:1.75rem; color:var(--muted); font-size:0.9rem}
 
 /* Utility */
 .container{padding:0 1rem}
