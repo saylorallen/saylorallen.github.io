@@ -1,31 +1,106 @@
 /* Plus Jakarta Sans - five weights loaded explicitly */
-@font-face{font-family:'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype'); font-weight:100 900; font-style:normal; font-display:swap}
+@font-face{font-family:'Plus Jakarta Sans italic'; src: url('fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype'); font-weight:100 900; font-style:italic; font-display:swap}
 @font-face{font-family:'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype'); font-weight:100 900; font-style:normal; font-display:swap}
 
-:root{--text:#0b1220;--muted:#6b7280;--accent:#60a5fa}
-html,body{height:100%}
-body{font-family:'Plus Jakarta Sans', sans-serif; background:#ffffff; color:var(--text); margin:0; padding:3rem; display:flex; flex-direction:column; align-items:center; min-height:100vh}
-.wrap{max-width:760px; width:100%; flex:1; display:flex; flex-direction:column}
-header h1{margin:0 0 0.25rem; font-size:2rem}
-p.lead{margin:0 0 1.5rem; color:var(--muted)}
-ul.toc{list-style:none; padding:0; margin:0; display:grid; gap:0.5rem}
-.item{background:#ffffff; padding:0.9rem 1rem; border-radius:8px; display:flex; align-items:center; gap:0.75rem; text-decoration:none; color:var(--text); border:1px solid #eef2f7}
-.thumb{width:40px;height:40px;border-radius:6px;background:#f3f6f9;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700}
-.meta{display:flex;flex-direction:column}
-.meta b{font-size:1rem}
-.meta small{color:var(--muted)}
-footer{margin-top:auto; color:var(--muted); font-size:0.9rem; padding:0.75rem 0}
+:root {
+	--font-regular: 'Plus Jakarta Sans', sans-serif;
+	--font-italic: 'Plus Jakarta Sans italic', italic;
 
-/* Utility */
-.container{padding:0 1rem}
+	--b1: #cfdae6;
+	--b2: #a1c3e6;
+	--b3: #7c9ebf;	
+	--b4: #536980;
+	--b5: #323f4d;
+	--r1: #e6dacf;
+	--r2: #e6c3a1;
+	--r3: #bf9e7c;
+	--r4: #806953;
+	--r5: #4d4032;
+	--g1: #e6e6e6;
+	--g2: #bfbfbf;
+	--g3: #808080;
+	--g4: #4d4d4d;
+	--g5: #333333;
+	--white: #FFFFFF;
+	--black: #000000;
+}
 
-/* Content placeholders - fill these in */
-.title{font-size: 48px; font-weight: 700; font-family: plus jakarta sans, sans-serif; color: var(--text); 
-	/* heading styles go here */
+.body {
+	font-family: var(--font-regular);
+	font-weight: 100;
+	font-size: 12px;
+	line-height: 1.25;
+	color: var(--black);
 }
-.subtitle{font-size: 24px; font-weight: 300; font-family: plus jakarta sans, sans-serif; color: var(--text);
-	/* subtitle styles go here */
+
+.caption {
+	font-family: var(--font-italic);
+	font-weight: 300;
+	font-size: 8px;
+	line-height: 1.25;
+	color: var(--g3);
 }
-.body{font-size: 12px; font-weight: 100; font-family: plus jakarta sans, sans-serif; color: var(--text);
-	/* body copy styles go here */
+
+.title {
+	font-family: var(--font-regular);
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.25;
+	color: var(--black);
+}
+
+.subtitle {
+	font-family: var(--font-regular);
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.25;
+	color: var(--black);
+}
+
+.margin-name{
+	font-family: var(--font-regular);
+	font-weight: 300;
+	font-size: 8px;
+	line-height: 1.25;
+	color: var(--g3);
+}
+
+/*making the cover page text white */
+.cover-page .title, .subtitle {
+	color: var(--white);
+}
+
+
+/*global resets */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*
+html {
+	font-family: var(--font-regular);
+	background-color: var(--color-background);
+	color: var(--color-text);
+}
+*/
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px ;
+  background-color: var(--white);
+  
+}
+
+body {
+  padding-bottom: 48px;
 }

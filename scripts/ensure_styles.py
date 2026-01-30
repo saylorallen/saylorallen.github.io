@@ -10,28 +10,42 @@ import argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
 LINK_TAG = '<link rel="stylesheet" href="styles.css">'
+HEADER_SNIPPET = '<header class="site-header">saylor allen</header>'
 
 
 def process_file(path: Path, apply: bool) -> bool:
     text = path.read_text(encoding='utf-8')
-    if 'href="styles.css"' in text or "href='styles.css'" in text:
-        return False
+    changed = False
 
-    head_close = text.lower().find('</head>')
-    if head_close == -1:
-        # can't reliably insert, skip
-        print(f'SKIP (no </head>): {path}')
-        return False
+    # ensure stylesheet link in head
+    if 'href="styles.css"' not in text and "href='styles.css'" not in text:
+        head_close = text.lower().find('</head>')
+        if head_close == -1:
+            print(f'SKIP (no </head>): {path}')
+            return False
+        text = text[:head_close] + LINK_TAG + '\n' + text[head_close:]
+        changed = True
 
-    insert_at = head_close
-    new_text = text[:insert_at] + LINK_TAG + '\n' + text[insert_at:]
+    # ensure site header exists in body
+    if 'class="site-header"' not in text and "class='site-header'" not in text:
+        body_open = text.lower().find('<body')
+        if body_open != -1:
+            body_start = text.find('>', body_open)
+            if body_start != -1:
+                insert_at = body_start + 1
+                text = text[:insert_at] + '\n' + HEADER_SNIPPET + '\n' + text[insert_at:]
+                changed = True
+
+    if not changed:
+        return False
 
     if apply:
-        path.write_text(new_text, encoding='utf-8')
+        path.write_text(text, encoding='utf-8')
         print(f'Updated: {path}')
     else:
-        print(f'Would add link to: {path}')
+        print(f'Would update: {path}')
     return True
 
 
