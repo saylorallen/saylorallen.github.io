@@ -25,6 +25,7 @@
 	--black: #000000;
 }
 
+/* typography styles generic*/
 .body {
 	font-family: var(--font-regular);
 	font-weight: 100;
@@ -32,18 +33,8 @@
 	line-height: 1.25;
 	color: var(--black);
 	}
-	/*a,
-	a:link,
-	a:visited,
-	a:hover,
-	a:active {
-		text-decoration: none;
-		color: inherit;
-		font-weight: 900;
-	}
-*/
 
-
+	/* link styles and highlight */
 a,
 a:link,
 a:visited {
@@ -51,18 +42,18 @@ a:visited {
 	color: inherit;
 	font-weight: 300;
 }
-
 a:hover,
 a:active {
 	font-weight: 700;
 }
 
+/* typography styles specific*/
 .caption {
 	font-family: var(--font-italic);
 	font-weight: 300;
 	font-size: 12px;
 	line-height: 1.25;
-	color: var(--g3);
+	color: var(--g2);
 }
 
 .title {
@@ -81,12 +72,16 @@ a:active {
 	color: var(--black);
 }
 
+/*making the cover page text white */
+.cover-page .title, .subtitle {
+	color: var(--white);
+}
 .instructor-note {
 	font-family: var(--font-regular);
 	font-weight: 300;
 	font-size: 24px;
 	line-height: 1.25;
-	color: var(--g3);
+	color: var(--g2);
 }
 
 .margin-name{
@@ -94,16 +89,7 @@ a:active {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 1.25;
-	color: var(--g3);
-}
-/*making the project page margin text white */
-.project-page .margin-name, .project-page .margin-navigation{
-	color: var(--white);
-}
-/* ensure footer name is gray on cover pages */
-.cover-page .site-footer .margin-name,
-.cover-page .site-footer .margin-name a {
-  color: var(--g3);
+	color: var(--g2);
 }
 
 .margin-navigation{
@@ -116,14 +102,21 @@ a:active {
     font-weight: 300;
     font-size: 12px;
     line-height: 1.25;
-    color: var(--g3);
+    color: var(--g2);
 }
 
-/*making the cover page text white */
-.cover-page .title, .subtitle {
+/*making the project page margin text white */
+.project-page .margin-name, 
+.project-page .margin-navigation{
 	color: var(--white);
 }
+/* ensure footer name is gray on cover pages */
+.cover-page .site-footer .margin-name,
+.cover-page .site-footer .margin-name a {
+  color: var(--g2);
+}
 
+/* typography styles specific*/
 
 /*global resets */
 * {
@@ -132,14 +125,7 @@ a:active {
 	box-sizing: border-box;
 }
 
-/*
-html {
-	font-family: var(--font-regular);
-	background-color: var(--color-background);
-	color: var(--color-text);
-}
-*/
-
+/* footer settings*/
 .site-footer {
 height: 120px;
   position: fixed;
@@ -153,7 +139,6 @@ height: 120px;
 
   padding: 24px;
   background-color: var(--white);
-  
 }
 
 /*footer swatch color change for project pages */
@@ -167,7 +152,8 @@ body {
 
 .project-information {
   display: grid;
-  grid-template-columns: 1fr 1fr 5fr; /* left narrow, right wide */
+  grid-template-columns: 15fr 15fr 70fr; /* left narrow, right wide */
   gap: 0;
   margin-top: 0;
+  /*align-items: center;*/
 }
