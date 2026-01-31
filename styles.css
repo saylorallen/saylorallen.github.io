@@ -28,15 +28,39 @@
 .body {
 	font-family: var(--font-regular);
 	font-weight: 100;
-	font-size: 12px;
+	font-size: 18px;
 	line-height: 1.25;
 	color: var(--black);
+	}
+	/*a,
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		text-decoration: none;
+		color: inherit;
+		font-weight: 900;
+	}
+*/
+
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 300;
+}
+
+a:hover,
+a:active {
+	font-weight: 700;
 }
 
 .caption {
 	font-family: var(--font-italic);
 	font-weight: 300;
-	font-size: 8px;
+	font-size: 12px;
 	line-height: 1.25;
 	color: var(--g3);
 }
@@ -44,7 +68,7 @@
 .title {
 	font-family: var(--font-regular);
 	font-weight: 700;
-	font-size: 48px;
+	font-size: 128px;
 	line-height: 1.25;
 	color: var(--black);
 }
@@ -52,17 +76,47 @@
 .subtitle {
 	font-family: var(--font-regular);
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 36px;
 	line-height: 1.25;
 	color: var(--black);
+}
+
+.instructor-note {
+	font-family: var(--font-regular);
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.25;
+	color: var(--g3);
 }
 
 .margin-name{
 	font-family: var(--font-regular);
 	font-weight: 300;
-	font-size: 8px;
+	font-size: 18px;
 	line-height: 1.25;
 	color: var(--g3);
+}
+/*making the project page margin text white */
+.project-page .margin-name, .project-page .margin-navigation{
+	color: var(--white);
+}
+/* ensure footer name is gray on cover pages */
+.cover-page .site-footer .margin-name,
+.cover-page .site-footer .margin-name a {
+  color: var(--g3);
+}
+
+.margin-navigation{
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 24px;
+    font-family: var(--font-regular);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--g3);
 }
 
 /*making the cover page text white */
@@ -87,6 +141,7 @@ html {
 */
 
 .site-footer {
+height: 120px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -96,11 +151,23 @@ html {
   justify-content: space-between;
   align-items: center;
 
-  padding: 12px ;
+  padding: 24px;
   background-color: var(--white);
   
 }
 
+/*footer swatch color change for project pages */
+.project-page .site-footer {
+  background-color: var(--b2);
+}
+
 body {
   padding-bottom: 48px;
+}
+
+.project-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr; /* left narrow, right wide */
+  gap: 0;
+  margin-top: 0;
 }

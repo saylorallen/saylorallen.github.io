@@ -1,3 +1,3 @@
 <p align="center" style="font-size: small;">
-  <a href="https://saylorallen.github.io/cover.html">continue to portfolio</a>
+  <a href="https://saylorallen.github.io/index.html">continue to portfolio</a>
 </p>
