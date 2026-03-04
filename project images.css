@@ -1,0 +1,23 @@
+.project-image {
+    display: block;
+    width: 66%;
+    height: auto; /* maintain aspect ratio */
+}
+
+@media (orientation: portrait) {
+    .project-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.fullbleed-project-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-image {
+    width: 25%;
+    height: auto;
+}
+

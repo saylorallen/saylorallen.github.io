@@ -32,7 +32,7 @@
 .body {
 	font-family: var(--font-regular);
 	font-weight: 100;
-	font-size: 18px;
+	font-size: 2vw;
 	line-height: 1.25;
 	color: var(--g5);
 	}
@@ -54,7 +54,7 @@ a:active {
 .caption {
 	font-family: var(--font-italic);
 	font-weight: 300;
-	font-size: 12px;
+	font-size: 2vw;
 	line-height: 1.25;
 	color: var(--g3);
 }
@@ -62,16 +62,16 @@ a:active {
 .title {
 	font-family: var(--font-regular);
 	font-weight: 700;
-	font-size: 128px;
-	line-height: 1.25;
+	font-size: 6vw;
+	line-height: 1.1em;
 	color: var(--g5);
 }
 
 .subtitle {
 	font-family: var(--font-regular);
 	font-weight: 500;
-	font-size: 48px;
-	line-height: 1.25;
+	font-size: 3vw;
+	line-height: 1.1em;
 	color: var(--g5);
 }
 
@@ -89,15 +89,15 @@ a:active {
 	font-family: var(--font-regular);
 	font-weight: 300;
 	font-size: 24px;
-	line-height: 1.25;
+	line-height: 1.1em;
 	color: var(--g3);
 }
 
 .margin-name{
 	font-family: var(--font-regular);
 	font-weight: 300;
-	font-size: 18px;
-	line-height: 1.25;
+	font-size: min(2vw, 16px);
+	line-height: 1.1em;
 	color: var(--g3);
 }
 
@@ -106,11 +106,14 @@ a:active {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 24px;
+	gap: 0px 24px;
+	flex-wrap: nowrap; /* ensure items never wrap to a new line */
+	white-space: nowrap; /* prevent text within items from wrapping */
+	overflow-x: auto; /* allow horizontal scrolling on very small viewports */
     font-family: var(--font-regular);
     font-weight: 300;
-    font-size: 12px;
-    line-height: 1.25;
+    font-size: min(1vw, 12px);
+    line-height: 1.1em;
     color: var(--g3);
 }
 
@@ -118,7 +121,7 @@ a:active {
 	font-family: var(--font-regular);
 	font-weight: 300;
 	font-size: 18px;
-	line-height: 1.25;
+	line-height: 1.1em;
 	color: var(--g3);
 	text-decoration: underline;
 	text-decoration-color: var(--g3);
@@ -129,14 +132,14 @@ a:active {
 	font-family: var(--font-regular);
 	font-weight: 100;
 	font-size: 12px;
-	line-height: 1.25;
+	line-height: 1.1em;
 	color: var(--g3);
 }
 .contact-title {
 	font-family: var(--font-regular);
 	font-weight: 700;
 	font-size: 24px;
-	line-height: 1.25;
+	line-height: 1.1em;
 	color: var(--b3);
 	text-decoration: underline;
 	text-decoration-color: var(--b3);
@@ -147,7 +150,7 @@ a:active {
 	font-family: var(--font-regular);
 	font-weight: 300;
 	font-size: 18px;
-	line-height: 1.25;
+	line-height: 1.1em;
 	color: var(--b3);
 }
 
@@ -159,7 +162,7 @@ a:active {
 /* ensure footer name is gray on cover pages */
 .cover-page .site-footer .margin-name,
 .cover-page .site-footer .margin-name a {
-  color: var(--g3);
+	color: var(--g3);
 }
 
 /* ensure footer name is gray on info pages */
