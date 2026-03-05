@@ -40,8 +40,7 @@
     font-size: clamp(24px, 6vw, 96px);
     line-height: 1.1em;
     color: var(--g5);
-    /* margin-left: 1.1em; */
-    margin-left: 1%;
+    margin-left: .1em;
 }
 
 .cover-page .title {
@@ -60,12 +59,48 @@
     color: var(--white);
 }
 
-.margin-name{
+.project-info {
+    font-family: var(--font-regular);
+    font-weight: 300;
+    font-size: clamp(12px, 1.25vw, 18px);
+    line-height: 1.5em;
+    color: var(--g2);
+    margin-left: .5em;
+}
+
+.collaborator-info {
+    font-family: var(--font-italic);
+    font-weight: 300;
+    font-size: clamp(8px, 1vw, 12px);
+    line-height: 1.1em;
+    color: var(--g2);
+    margin-left: .75em;
+}
+
+.project-description {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    font-family: var(--font-regular);
+    font-weight: 300;
+    font-size: clamp(8px, 1vw, 18px);
+    line-height: 1.1em;
+    color: var(--g5);
+    margin: 1.1em; /* add vertical spacing between project description and other elements */
+}
+
+@media (orientation: portrait) {
+    .project-description {
+        display: grid;
+        grid-template-columns: 95% 5%;
+    }
+}
+
+.margin-name {
     font-family: var(--font-regular);
     font-weight: 300;
     font-size: clamp(8px, 1vw, 24px);
     line-height: 1.1em;
-    color: var(--white);
+    color: var(--g3);
     text-decoration: none;
     flex-wrap: nowrap; /* prevent text from wrapping to a new line */
     white-space: nowrap; /* prevent text from wrapping within the item */
@@ -77,7 +112,7 @@
     font-weight: 300;
     font-size: clamp(6px, .75vw, 18px);
     line-height: 1.1em;
-    color: var(--white);
+    color: var(--g3);
     text-decoration: none;
     display: flex;   
     flex-wrap: wrap;           /* allow the row to wrap to new lines */
@@ -88,29 +123,15 @@
     white-space: nowrap;       /* prevent wrapping inside each item */
 }
 
-.instructor-note {
-    font-family: var(--font-regular);
-    font-weight: 300;
-    font-size: clamp(12px, 1.25vw, 18px);
-    line-height: 1.5em;
-    color: var(--g2);
-    margin-left: 1.1em;
-}
-
-.project-description {
-    font-family: var(--font-regular);
-    font-weight: 300;
-    font-size: clamp(8px, 1vw, 12px);
-    line-height: 1.1em;
-    color: var(--g5);
-    margin: 1.1em; /* add vertical spacing between project description and other elements */
-}
-
 .project-page .site-footer .margin-name {
     color: var(--white);
 }
 
 .project-page .site-footer .margin-navigation {
+    color: var(--white);
+}
+
+.project-page .site-footer .margin-contact {
     color: var(--white);
 }
 
@@ -125,20 +146,18 @@
 .margin-pictures img {
     max-width: clamp(8px, 2vw, 32px);
     height: auto;
-
 }
 
 	/* link styles and highlight */
-a,
-a:link,
-a:visited {
+a
+.margin-name .margin-navigation:visited  {
 	text-decoration: none;
-	color: var(--g3);
 	font-weight: 300;
+    color: var(--g3);
 }
+
+
 a:hover,
 a:active {
 	font-weight: 700;
 }
-
-

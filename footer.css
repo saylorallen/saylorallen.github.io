@@ -7,7 +7,7 @@
     right: 0; /* use left:0 + right:0 instead of width:100% to avoid overflow from padding */
     box-sizing: border-box; /* include padding in the element's width so right padding is visible */
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr; 
     gap: 1em;
     justify-content: center;
     align-items: center;
@@ -39,6 +39,6 @@ footer {
 
 /* reserve space equal to the footer height so page content isn't hidden */
 body {
+    height: auto;
 	padding-bottom: clamp(20px, 5vh, 80px);
-    
 }

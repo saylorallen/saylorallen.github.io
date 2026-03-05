@@ -16,8 +16,21 @@
     height: auto;
 }
 
-.hero-image {
-    width: 25%;
-    height: auto;
+.meta-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1em; /* add some spacing between the two columns */
+    padding-bottom: .5%;
 }
 
+@media (orientation: portrait) {
+    .meta-info-grid {
+        grid-template-columns: 1fr; /* stack the columns on top of each other */
+        gap: 3%; /* maintain spacing between the stacked items */
+    }
+}
+
+.collaborator {
+    display: grid;
+    align-items: center; /* vertically center the collaborator info */ 
+}
