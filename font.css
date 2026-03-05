@@ -98,7 +98,7 @@
 .margin-name {
     font-family: var(--font-regular);
     font-weight: 300;
-    font-size: clamp(8px, 1vw, 24px);
+    font-size: clamp(8px, 1.5vw, 18px);
     line-height: 1.1em;
     color: var(--g3);
     text-decoration: none;
@@ -110,7 +110,7 @@
 .margin-navigation {
     font-family: var(--font-regular);
     font-weight: 300;
-    font-size: clamp(6px, .75vw, 18px);
+    font-size: clamp(6px, 1vw, 14px);
     line-height: 1.1em;
     color: var(--g3);
     text-decoration: none;
@@ -149,8 +149,8 @@
 }
 
 	/* link styles and highlight */
-a
-.margin-name .margin-navigation:visited  {
+a:link,
+a:visited {
 	text-decoration: none;
 	font-weight: 300;
     color: var(--g3);
