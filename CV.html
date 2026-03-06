@@ -1,404 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae 2026</title>
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="project images.css">
+  <link rel="stylesheet" href="cv.css">
 </head>
-<section class="header-top" aria-label="site header" style="font-family: 'Plus Jakarta Sans', sans-serif;">
-      <h1 style="font-size: max(36px, 3vw); margin:1vw;">
-        <span class="" style="font-weight:700; color: var(--b4);">saylor</span>
-        <span class="" style="font-weight:300; color: var(--g4);">allen</span>
-      </h1>
-    </section>
 <body class="info-page">
-    <section class="two-columns" aria-label="curriculum details">
-      <style>
-      /* layout: left-year column 25%, right-description column 25%, spacer 50% */
-      .two-columns { display: grid !important; grid-template-columns: 15% 35% 50%; gap: 2rem; align-items: start; margin: 2rem 0; font-family: inherit; }
-      /* the .left container should occupy the first two grid columns (50% total)
-         the internal .cv-table will split that 50% into two equal columns (25% each) */
-      .two-columns .left { grid-column: 1 / 3; }
-      @media (max-width:1200px) { .two-columns { grid-template-columns: 1fr; } .two-columns .left { grid-column: auto; } }
-      .two-columns .section-title{ font-size:1.1rem; margin:0 0 .5rem; font-weight:600; }
-      .two-columns .muted{ color:var(--g4,#666); font-size:.95rem; }
-      </style>
+<header>    
+    <div>
+        <p class="subtitle">
+            <span class="first name">saylor</span>
+            <span class="last name">allen</span>
+        </p>
+    </div>
+</header> 
+<main>
+    <div class="cv-grid">
 
-      <div class="left">
-        <style>
-          .cv-table {
-            display: grid;
-            /* split the left area into two equal columns so combined they equal 50% of page */
-            grid-template-columns: 1fr 3fr;
-            gap: .5rem 1rem;
-            max-height: calc(100vh - 240px);
-            overflow: auto;
-            padding-right: .5rem;
-          }
-          .cv-table .cell { padding: .25rem 0; }
-          .cv-table .left-cell { font-weight:700; min-width:0; display:flex; align-items:top; justify-content:center; text-align:center; }
-          .cv-table .right-cell { min-width:0; color:var(--g4,#666); }
-          @media (max-width:700px) {
-            .cv-table { grid-template-columns: 1fr; }
-          }
-        </style>
+        <!-- start of cv -->
+        <div></div>
+        <div class="cv-section-head">Education</div>
 
-        <div class="cv-table" role="table" aria-label="experience table">
-          <div class="left-cell cell" role="rowheader"><p class="cv-body"></p></div>
-          <div class="right-cell cell" role="cell"><p class="cv-section-title">Education</p></div>
-          
-          <div class="left-cell cell">
-            <p class="cv-body">2023 - 2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Master of Architecture (2 - Year)
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI 
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2019 - 2023</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Bachelor of Science: Architecture
-            <p class="cv-body">University of Minnesota, College of Design, School of Architecture
-            <p class="cv-body">Minneapolis, MN
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2019 - 2023</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Minor: Sustainability Studies 
-            <p class="cv-body">University of Minnesota, Institute on the Environment
-            <p class="cv-body">Minneapolis, MN
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2015 - 2019</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">High School Diploma 
-            <p class="cv-body">Madison West Hgih School
-            <p class="cv-body">Madison, WI
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-section-title"></p></div>
-          <div class="right-cell cell">
-            <p class="cv-section-title">Professional Experience
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2024 - 2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">CNC Lab Assistant
-            <p class="cv-body">Taubman College FabLAB, Ann Arbor, Michigan
-            </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2023 - 2024</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">3D Print Lab Assistant
-            <p class="cv-body">Taubman College FabLAB, Ann Arbor, MI
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2023 - 2024</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Technician I
-            <p class="cv-body">TKDA, St. Paul, MN
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2021 - 2022</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Landscape Construction Intern
-            <p class="cv-body">Margolis Company, Roseville, MN
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2019 - 2020</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Maintenance Worker
-            <p class="cv-body">Yudof Residence Hall, Minneapolis, MN
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-section-title"></p></div>
-          <div class="right-cell cell">
-            <p class="cv-section-title">Academic Experience
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Studio Instructor
-            <p class="cv-body">ARCStart, Ann Arbor, MI
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2024</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Research Assistant
-            <p class="cv-body">Taubman College, Ann Arbor, MI
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2023 - 2024</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Graphics Chair
-            <p class="cv-body">Taubman College - Architecture Representative Committee, Ann Arbor, MI
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2021 - 2022</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Undergraduate Representative
-            <p class="cv-body">College of Design - Honors and Awards Committee, Minneapolis, MN
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2020 - 2022</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Undergraduate Studio Representative
-            <p class="cv-body">College of Design, Minneapolis, MN
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2018 - 2019</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Pre-Calculus Tutor
-            <p class="cv-body">Madison West High School, Madison, WI
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-section-title"></p></div>
-          <div class="right-cell cell">
-            <p class="cv-section-title">Exhibitions
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Taubman College Student Show: Propositions Studio - The Future of Commuting
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI. Mar 26-30, 2025.
-            <p class="cv-body">With: ARCH672 Paris Propositions Travel Studio
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Taubman College Student Show: Collectives Studio - D.I.Y.*
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI. Mar 26-30, 2025.
-            <p class="cv-body">With: Saylor Allen, John Spraberry
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Travel Studio Exhibition: Propositions Studio - The Future of Commuting
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI. Online.
-            <p class="cv-body">Group Lead: Saylor Allen
-            <p class="cv-body">With: ARCH672 Paris Propositions Travel Studio
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2024</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Taubman Architecture Ball: What the Ball?!
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI. Mar 29-31, 2024.
-            <p class="cv-body">Group Lead: Saylor Allen
-            <p class="cv-body">With: Stephanie Dutan, Shravan Iyer, Roy Khoury, Vanessa Lekaj
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2024</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Big, Hot & Sticky: Property Ecologies
-            <p class="cv-body">Architecture Center Houston
-            <p class="cv-body">Houston, TX. Jun 27 - Aug 23, 2024.
-            <p class="cv-body">Group Lead: Gabriel Cuellar
-            <p class="cv-body">With: Saylor Allen, Md Ehsan Alam
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2023</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">School of Architecture: 57 Chairs_5 Weeks
-            <p class="cv-body">University of Minnesota, College of Design, School of Architecture
-            <p class="cv-body">Minneapolis, MN. April 14-16, 2023.
-            <p class="cv-body">Group Lead: Thomas Oliphant
-            <p class="cv-body">With: DES3322 Furniture Design: Practice
-          </p></div>
-          
-          <div class="left-cell cell">
-            <p class="cv-body">2022</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Urban Design Studio: LOCAL NON-LOCAL
-            <p class="cv-body">University of Minnesota, College of Design, School of Architecture
-            <p class="cv-body">Minneapolis, MN. May 3, 2022.
-            <p class="cv-body">Group Lead: Gabriel Cuellar
-            <p class="cv-body">With: ARCH4284 Local Non-Local
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-section-title"></p></div>
-          <div class="right-cell cell">
-            <p class="cv-section-title">Publications
-          </p></div>
-          
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Dimensions Student Journal: Dimensions 38
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI. 
-            <p class="cv-body">Featured in Acknowledgments
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-section-title"></p></div>
-          <div class="right-cell cell">
-            <p class="cv-section-title">Invited Critiques
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Peer Critiques
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI. 
-            <p class="cv-body">Wallenberg Studio: SITUATION-SHIPS with Neal Robinson
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-section-title"></p></div>
-          <div class="right-cell cell">
-            <p class="cv-section-title">Invited Lectures
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Staff Stories: Lecture Series
-            <p class="cv-body">ARCStart, Ann Arbor, MI
-          </p></div>
-          
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">On Representation: Porch Chat
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Wallenberg Studio: SITUATION-SHIPS with Neal Robinson 
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-section-title"></p></div>
-          <div class="right-cell cell">
-            <p class="cv-section-title">Scholarships
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2023 - 2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Architecture Graduate Grants
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI. 
-          </p></div>
-          
-          <div class="left-cell cell">
-            <p class="cv-body">2023 - 2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Taubman College Merit Award
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI. 
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2019 - 2023</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Gopher Merit Scholarship
-            <p class="cv-body">University of Minnesota, College of Design, School of Architecture
-            <p class="cv-body">Minneapolis, MN. 
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-section-title"></p></div>
-          <div class="right-cell cell">
-            <p class="cv-section-title">Awards & Recognitions
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Landscape of (Un)_Concious - Busan 41st International Architecture Competition: Bronze Prize
-            <p class="cv-body">Korean Institute of Architects Busan
-            <p class="cv-body">Busan, Korea. 
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Burton L. Kampner Memorial Award for Best Thesis: Nominee
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI. 
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Taubman College Student Show: Propositions Studio Participant
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI.
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2025</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Taubman College Student Show: Collectives Studio Participant
-            <p class="cv-body">University of Michigan, Taubman College of Architecture and Urban Planning
-            <p class="cv-body">Ann Arbor, MI.
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-body">2022</p></div>
-          <div class="right-cell cell">
-            <p class="cv-body">Student Academic Excellence Award: Undergraduate Team Category
-            <p class="cv-body">University of Minnesota, College of Design, School of Architecture
-            <p class="cv-body">Minneapolis, MN. 
-          </p></div>
-
-          <div class="left-cell cell">
-            <p class="cv-section-title"></p></div>
-          <div class="right-cell cell">
-            <p class="cv-section-title">Skills [+]
-          </p></div>
-
-
+        <div class="cv-year">2023 - 2025</div>
+        <div class="cv-body">Master of Architecture (2 - Year)<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI 
         </div>
-      </div>
-    </section>
-    
 
-    <footer class="site-footer">
-    <a href="index.html" class="margin-name">_ saylor allen</a>
+        <div class="cv-year">2019 - 2023</div>
+        <div class="cv-body">Bachelor of Science: Architecture<br>
+University of Minnesota, College of Design, School of Architecture<br>
+Minneapolis, MN
+        </div>
 
-    <nav class="margin-navigation">
-      <a href="index.html">HOME</a>
-      <script>
-      document.addEventListener('DOMContentLoaded', function(){
-        const table = document.querySelector('.cv-table');
-        if (table) {
-          table.style.maxHeight = 'none';
-          table.style.overflow = 'visible';
-        }
-      });
-      </script>
-      
-      <!-- <a href="x.html">x</a> -->
-    </nav>
+        <div class="cv-year">2019 - 2023</div>
+        <div class="cv-body">Minor: Sustainability Studies <br>
+University of Minnesota, College of Design, School of Architecture<br>
+Minneapolis, MN
+        </div>
+
+        <div></div>
+        <div class="cv-section-head">Professional Experience</div>
+
+        <div class="cv-year">2024 - 2025</div>
+        <div class="cv-body">CNC Lab Assistant<br>
+Taubman College FabLAB, Ann Arbor, MI
+        </div>
+
+        <div class="cv-year">2023 - 2024</div>
+        <div class="cv-body">3D Print Lab Assistant<br>
+Taubman College FabLAB, Ann Arbor, MI
+        </div>
+
+        <div class="cv-year">2022 - 2023</div>
+        <div class="cv-body">Technician I<br>
+TKDA, St. Paul, MN
+        </div>
+
+        <div class="cv-year">2021 - 2022</div>
+        <div class="cv-body">Landscape Construction Intern<br>
+Margolis Company, Roseville, MN
+        </div>
+
+        <div class="cv-year">2019 - 2020</div>
+        <div class="cv-body">Maintenance Worker<br>
+Yudof Residence Hall, Minneapolis, MN
+        </div>
+
+        <div></div>
+        <div class="cv-section-head">Academic Experience</div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Studio Instructor<br>
+ARCStart, Ann Arbor, MI
+        </div>
+
+        <div class="cv-year">2024</div>
+        <div class="cv-body">Research Assistant<br>
+Taubman College, Ann Arbor, MI
+        </div>
+
+        <div class="cv-year">2023 - 2024</div>
+        <div class="cv-body">Graphics Chair<br>
+Taubman College - Architecture Representative Committee, Ann Arbor, MI
+        </div>
+
+        <div class="cv-year">2021 - 2022</div>
+        <div class="cv-body">Undergraduate Representative<br>
+College of Design - Honors and Awards Committee, Minneapolis, MN
+        </div>
+
+        <div class="cv-year">2020 - 2022</div>
+        <div class="cv-body">Undergraduate Studio Representative<br>
+College of Design, Minneapolis, MN
+        </div>
+
+        <div class="cv-year">2018 - 2019</div>
+        <div class="cv-body">Pre-Calculus Tutor<br>
+Madison West High School, Madison, WI
+        </div>
+
+<div></div>
+        <div class="cv-section-head">Exhibitions</div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Taubman College Student Show: Propositions Studio - The Future of Commuting<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI. Mar 26-30, 2025.<br>
+With: ARCH672 Paris Propositions Travel Studio
+        </div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Taubman College Student Show: Collectives Studio - D.I.Y.*<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI. Mar 26-30, 2025.<br>
+With: Saylor Allen, John Spraberry
+        </div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Travel Studio Exhibition: Propositions Studio - The Future of Commuting<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI. Online.<br>
+Group Lead: Saylor Allen<br>
+With: ARCH672 Paris Propositions Travel Studio
+        </div>
+
+        <div class="cv-year">2024</div>
+        <div class="cv-body">Taubman Architecture Ball: What the Ball?!<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI. Mar 29-31, 2024.<br>
+Group Lead: Saylor Allen<br>
+With: Stephanie Dutan, Shravan Iyer, Roy Khoury, Vanessa Lekaj
+        </div>
+
+        <div class="cv-year">2024</div>
+        <div class="cv-body">Big, Hot & Sticky: Property Ecologies<br>
+Architecture Center Houston<br>
+Houston, TX. Jun 27 - Aug 23, 2024.<br>
+Group Lead: Gabriel Cuellar<br>
+With: Saylor Allen, Md Ehsan Alam
+        </div>
+
+        <div class="cv-year">2023</div>
+        <div class="cv-body">School of Architecture: 57 Chairs_5 Weeks<br>
+University of Minnesota, College of Design, School of Architecture<br>
+Minneapolis, MN. April 14-16, 2023.<br>
+Group Lead: Thomas Oliphant<br>
+With: DES3322 Furniture Design: Practice
+        </div>
+
+        <div class="cv-year">2022</div>
+        <div class="cv-body">Urban Design Studio: LOCAL NON-LOCAL<br>
+University of Minnesota, College of Design, School of Architecture<br>
+Minneapolis, MN. May 3, 2022.<br>
+Group Lead: Gabriel Cuellar<br>
+With: ARCH4284 Local Non-Local
+        </div>
+
+        <div></div>
+        <div class="cv-section-head">Publications</div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Dimensions Student Journal: Dimensions 38<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI. <br>
+Acknowledgments
+        </div>
+
+        <div></div>
+        <div class="cv-section-head">Invited Critiques</div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Peer Critiques<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Wallenberg Studio: SITUATION-SHIPS with Neal Robinson
+        </div>
+
+        <div></div>
+        <div class="cv-section-head">Invited Lectures</div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">On Representation: Porch Chat<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Wallenberg Studio: SITUATION-SHIPS with Neal Robinson
+        </div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Staff Stories Lecture Series: Some Hot Takes<br>
+ARCStart, Ann Arbor, MI
+        </div>
+
+        <div></div>
+        <div class="cv-section-head">Scholarships</div>
+
+        <div class="cv-year">2023 - 2025</div>
+        <div class="cv-body">Architecture Graduate Grants<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI. 
+        </div>
+
+        <div class="cv-year">2023 - 2025</div>
+        <div class="cv-body">Taubman College Merit Award<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI. 
+        </div>
+
+        <div class="cv-year">2019 - 2023</div>
+        <div class="cv-body">Gopher Merit Scholarship<br>
+University of Minnesota, College of Design, School of Architecture<br>
+Minneapolis, MN
+        </div>
+
+        <div></div>
+        <div class="cv-section-head">Awards and Recognitions</div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Landscape of (Un)_Concious - Busan 41st International Architecture Competition: Bronze Prize<br>
+Korean Institute of Architects Busan, Busan, Korea. 
+        </div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Burton L. Kampner Memorial Award for Best Thesis: Nominee<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI. 
+        </div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Taubman College Student Show: Propositions Studio Participant<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI.
+        </div>
+
+        <div class="cv-year">2025</div>
+        <div class="cv-body">Taubman College Student Show: Collectives Studio Participant<br>
+University of Michigan, Taubman College of Architecture and Urban Planning<br>
+Ann Arbor, MI.
+        </div>
+        
+        <div class="cv-year">2022</div>
+        <div class="cv-body">Student Academic Excellence Award: Undergraduate Team Category<br>
+University of Minnesota, College of Design, School of Architecture<br>
+Minneapolis, MN.
+        </div>
+
+        <div></div>
+        <div class="cv-section-head">Skills (+)</div>
+
+    </div>
+<!-- end of cv -->
+</main>
+
+</body>
+  <footer class="site-footer">
+      <a href="index.html" class="margin-name">_ saylor allen</a>
+        <nav>
+          <a href="index.html" class="margin-navigation">HOME</a>
+
+        </nav>
+            <nav class="margin-pictures">
+            <a href="https://www.linkedin.com/in/saylorallen"><img src="images/home/linkedin-Logo recolor.png" alt="LinkedIN"></a>
+            <a href="contact.html"><img src="images\home\mail blue main.png" alt="Contact"></a>
+            <a href="https://www.instagram.com/alle1322arch/"><img src="images/home/instagram-Logo recolor.png" alt="Instagram"></a>
+        </nav>
   </footer>
 </body>
 </html>

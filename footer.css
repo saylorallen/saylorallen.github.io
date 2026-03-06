@@ -19,6 +19,7 @@
     background-color: var(--b2);
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    column-gap: 1em; /* horizontal gap between columns */
     /* gap: 1em; */
     align-items: center;
     /* margin-top: 1px; */

@@ -1,0 +1,72 @@
+/* the info page heading that is standard in the menu */
+.info-page .first.name {
+    font-family: var(--font-regular);
+    font-weight: 900;
+    /* font-size: clamp(24px, 5vw, 48px); */
+    line-height: 1.1em;
+    color: var(--b4);
+    margin-left: .1em;
+}
+
+.info-page .last.name {
+    font-family: var(--font-regular);
+    font-weight: 300;
+    /* font-size: clamp(24px, 5vw, 48px); */
+    line-height: 1.1em;
+    color: var(--g4);
+    margin-left: .1em;
+}
+
+
+/* master cv grid */
+.cv-grid {
+    width: 66vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 1em;
+    gap: 1em;
+}
+
+@media (orientation: portrait) {
+    .cv-grid {
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin: 1em;
+        gap: 1em;
+    }
+}
+
+/* new fonts for cv page */
+.cv-section-head {
+    font-family: var(--font-regular);
+    font-weight: 300;
+    font-size: clamp(8px, 3vw, 16px);
+    line-height: 1.1em;
+    color: var(--g3);
+    /* margin-left: .5em; */
+    text-decoration: underline;
+    text-decoration-color: var(--g3);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.cv-year {
+    font-family: var(--font-regular);
+    font-weight: 300;
+    font-size: clamp(6px, 1.25vw, 12px);
+    line-height: 1.1em;
+    color: var(--g3);
+    /* margin-left: .5em; */
+    justify-self: center;
+    align-self: top;
+}
+
+.cv-body {
+    font-family: var(--font-regular);
+    font-weight: 300;
+    font-size: clamp(6px, 1.25vw, 12px);
+    line-height: 1.1em;
+    color: var(--g3);
+    /* margin-left: .5em; */
+}
