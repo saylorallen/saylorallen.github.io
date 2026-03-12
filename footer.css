@@ -1,8 +1,13 @@
+/* global variable --footer-height */
+:root {
+    --footer-height: 12.5vh;
+    }
+
 /* footer settings*/
 .site-footer {
     /* height: clamp(20px, 5vh, 80px); */
     /* height: clamp(24px, 20%, 96px); */
-    height: 10vh;
+    height: var(--footer-height);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -42,5 +47,7 @@
 /* } */
 
 main {
-    padding-bottom: 9.5vh; /* add bottom padding to main content to prevent overlap with fixed footer */
+    /* padding-bottom: var(--footer-height);   */
+    /* add bottom padding to main content to prevent overlap with fixed footer */
+    padding-bottom: calc(var(--footer-height) - .5vh);
 }
