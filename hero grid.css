@@ -41,3 +41,63 @@
   }
 }
 
+
+/* contact page */
+
+/* whole page layout */
+.contact-gallery {
+  height: 80vh; 
+  display: flex;
+  justify-content: center;
+  translate: 0 -5vh;
+  flex-direction: column;
+  margin-left: clamp(18px, 3vw, 32px);;
+}
+
+/* section breakouts */
+.contact-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 10vh 5vh);
+  gap: 1vh;
+}
+
+.image-link {
+  position: relative;
+  display: inline-block;
+}
+
+/* visible photo */ 
+/* these are not related to the grid */
+.contact-image-default {
+  width: auto;
+  height: 100%; /* maintain aspect ratio */
+  display: block;
+}
+
+/* hover over photo */
+.contact-image-hover {
+  width: auto;
+  height: 100%; /* maintain aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+/* hover action */
+.image-link:hover .contact-image-hover {
+  opacity: 1;
+}
+
+.contact-text {
+  font-family: var(--font-regular);
+  font-weight: 300;
+  font-size: clamp(6px, 1.25vw, 12px);
+  line-height: 1.25em;
+  color: var(--g3);
+  /* margin-left: .5em; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}

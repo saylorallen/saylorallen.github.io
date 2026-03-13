@@ -17,7 +17,6 @@
   margin-left: .1em;
 }
 
-
 /* master cv grid */
 .cv-grid {
   width: 66vw;
@@ -29,7 +28,7 @@
 
 @media (orientation: portrait) {
   .cv-grid {
-    width: 80vw;
+    width: 90vw;
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 1em;

@@ -156,7 +156,7 @@
 .margin-pictures {
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: 1vw;
     justify-content: right;
 }
 
