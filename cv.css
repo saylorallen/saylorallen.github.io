@@ -1,5 +1,5 @@
 /* the info page heading that is standard from the menu */
-.info-page .first.name {
+.info-page .firstname {
   font-family: var(--font-regular);
   font-weight: 900;
   /* font-size: clamp(24px, 5vw, 48px); */
@@ -8,7 +8,7 @@
   margin-left: .1em;
 }
 
-.info-page .last.name {
+.info-page .lastname {
   font-family: var(--font-regular);
   font-weight: 300;
   /* font-size: clamp(24px, 5vw, 48px); */

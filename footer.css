@@ -5,21 +5,13 @@
 
 /* footer settings*/
 .site-footer {
-    /* height: clamp(20px, 5vh, 80px); */
-    /* height: clamp(24px, 20%, 96px); */
+    
     height: var(--footer-height);
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0; /* use left:0 + right:0 instead of width:100% to avoid overflow from padding */
     box-sizing: border-box; /* include padding in the element's width so right padding is visible */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 3fr 1fr;  */
-    /* gap: 1em; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* padding: 3em;
-    padding-bottom: 4em; */
     padding: 0 2em; /* top right bottom left */
     background-color: var(--b2);
     display: grid;
@@ -34,20 +26,7 @@
     background-color: var(--white);
 }
 
-/* Footer grid: three columns (1fr 3fr 1fr) */
-/* footer { */
-    /* keep the clamp sizing already used site-wide */
-    /* height: clamp(24px, 20%, 96px); */
-    /* padding: 1em; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 3fr 1fr; */
-    /* gap: 1em; */
-    /* align-items: center; */
-    /* justify-content: center; */
-/* } */
 
 main {
-    /* padding-bottom: var(--footer-height);   */
-    /* add bottom padding to main content to prevent overlap with fixed footer */
     padding-bottom: calc(var(--footer-height) - .5vh);
 }

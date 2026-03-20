@@ -41,12 +41,33 @@
   }
 }
 
+/* cover page iamge "cowboy" */
+.fullbleed-cover-image {
+  /* width: 100vw; */
+  height: 60vh; /* maintain aspect ratio */
+  width: auto;
+  display : flex;
+  position: absolute;
+  bottom: var(--footer-height);
+  /* padding-right:; */
+}
 
+@media (orientation: portrait) {
+  .fullbleed-cover-image {
+    width: 100vw; /* maintain aspect ratio */
+    height: auto;
+    display : flex;
+    /* position: absolute; */
+    /* bottom: var(--footer-height); */
+    /* padding-right:; */
+  }
+}
 /* contact page */
 
 /* whole page layout */
 .contact-gallery {
   height: 80vh; 
+  width: max-content;
   display: flex;
   justify-content: center;
   translate: 0 -5vh;
